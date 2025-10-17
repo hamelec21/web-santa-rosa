@@ -1,0 +1,41 @@
+@import "tailwindcss";
+
+/* Variables base */
+:root {
+  --background: #ffffff;
+  --foreground: #ffffff;
+
+  /* Colores del club */
+  --santa: #00125a;
+  --santa-gold: #dbb246;
+  --santa-gold-light: #e0bd5f;
+  --santa-bg: #f7f7f7;
+}
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+
+  /* Tus colores también pueden estar disponibles aquí si quieres */
+  --color-santa: var(--santa);
+  --color-santa-gold: var(--santa-gold);
+  --color-santa-gold-light: var(--santa-gold-light);
+  --color-santa-bg: var(--santa-bg);
+}
+
+/* Modo oscuro */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #f7f7f7;
+    --foreground: #ededed;
+  }
+}
+
+/* Aplicar colores base al body */
+body {
+  background: var(--background);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+}
