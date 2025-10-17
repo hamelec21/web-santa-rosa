@@ -2,6 +2,7 @@ import GaleriaSection from "@/components/GaleriaSection";
 import Hero from "@/components/Hero";
 import NosotrosIntro from "@/components/NosotrosIntro";
 import NoticiasSection from "@/components/NoticiasSection";
+import PatrocinadoresSection from "@/components/PatrocinadoresSection";
 import ResultadosSection from "@/components/ResultadosSection";
 import SeriesSection from "@/components/SeriesSection";
 
@@ -36,6 +37,11 @@ export default function Home() {
       {/* Sección Galeria */}
       <section className="w-full bg-white">
         <GaleriaSection />
+      </section>
+
+      {/* Sección patrocinadores */}
+      <section className="w-full bg-white">
+        <PatrocinadoresSection />
       </section>
     </div>
   );
