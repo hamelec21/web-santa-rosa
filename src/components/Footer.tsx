@@ -6,7 +6,7 @@ export default function Footer() {
     <footer className="bg-santa text-white py-12 mt-24">
       <div className="max-w-7xl mx-auto px-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-8">
 
-        {/* Logo y derechos */}
+        {/* Logo */}
         <div className="flex flex-col items-start gap-4">
           <div className="w-16 h-16 flex items-center justify-center rounded-full shadow-lg bg-white p-1.5">
             <Image
@@ -17,21 +17,6 @@ export default function Footer() {
               className="object-contain"
             />
           </div>
-          <p className="text-sm">
-            &copy; {new Date().getFullYear()} Club Deportivo Juventud Santa Rosa. <br />
-            Todos los derechos reservados.
-          </p>
-          <p className="text-xs text-gray-300">
-            Sitio desarrollado por{" "}
-            <a
-              href="https://proscom.cl"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="hover:text-santa-gold transition-colors duration-300"
-            >
-              proscom.cl
-            </a>
-          </p>
         </div>
 
         {/* Enlaces rápidos */}
@@ -83,9 +68,18 @@ export default function Footer() {
 
       </div>
 
-      {/* Línea inferior */}
-      <div className="mt-10 border-t border-gray-700 pt-6 text-center text-xs text-gray-400">
-        &copy; {new Date().getFullYear()} Club Deportivo Juventud Santa Rosa. Todos los derechos reservados.
+      {/* Línea inferior con derechos y crédito */}
+      <div className="mt-10 border-t border-gray-700 pt-6 text-center text-xs text-gray-300">
+        &copy; {new Date().getFullYear()} Club Deportivo Juventud Santa Rosa. Todos los derechos reservados. <br />
+        Sitio desarrollado por{" "}
+        <a
+          href="https://proscom.cl"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="hover:text-santa-gold transition-colors duration-300"
+        >
+          proscom.cl
+        </a>
       </div>
     </footer>
   );
